@@ -25,7 +25,7 @@ def get_mcu_serial(port_id_):
             return None
 
             
-def check_arduino(correct_port, interval=0.1):
+def check_arduino(correct_port):
     for p in serial.tools.list_ports.comports():
         if p.device == correct_port:
             return True
@@ -34,7 +34,7 @@ def check_arduino(correct_port, interval=0.1):
 
 def serial_split(serial_string_):
     '''
-    Same as spit_coords, but does so length-agnostic. Incorrect lengths are detected downstream.
+    Split the incoming data into ints
     '''
     return [float(x) for x in serial_string_.split(',')]
 

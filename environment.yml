@@ -11,4 +11,5 @@ dependencies:
     - pyserial==3.5
     - ray
     - opencv-python==4.6.0.66
+    - getch
     - -e .
