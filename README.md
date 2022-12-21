@@ -1,2 +1,4 @@
 # rayduino
-Library for parallelized DAQ with Ray and Arduino
+Library for parallelized DAQ with Ray and Arduino (or any serial connection)
+
+

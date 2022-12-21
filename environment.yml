@@ -1,0 +1,14 @@
+name: rayduino
+channels: 
+  - defaults
+  - conda-forge
+dependencies:
+  - pip>=21.2.4
+  - python==3.8
+  
+  - pip:
+    - numpy==1.23.0
+    - pyserial==3.5
+    - ray
+    - opencv-python==4.6.0.66
+    - -e .
